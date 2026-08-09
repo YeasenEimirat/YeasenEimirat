@@ -1,68 +1,214 @@
 <h1 align="center">Hi 👋, I'm Yaseen Eimirat</h1>
-<h3 align="center">Intern / Junior Backend Developer — C# & .NET</h3>
+
+<h3 align="center">Backend Developer Intern | C# & .NET</h3>
 
 <p align="center">
-Second-year Computer Systems Engineering student with a solid foundation in C#, C++, OOP, Data Structures, and SQL Server database design. Currently building a real production backend system (PTC Hub) and actively expanding into modern web technologies.
+Second-year Computer Systems Engineering student focused on backend development with C# and .NET.
+I have a strong foundation in C#, C++, OOP, Data Structures, Algorithms, and SQL Server database design.
+Currently developing and testing PTC Hub, a web platform designed for Palestine Technical College students.
 </p>
 
 ---
 
-### 🎓 Education
-- **Palestine Technical College – Deir El Balah** — B.Sc. Computer Systems Engineering (Year 1 completed) — GPA: 90.55%
-- **Shuhdaa Alnuseirat Sec. School** — High School Diploma (2023) — GPA: 97.60%, Ranked 2nd in school
+## 🎓 Education
 
-### 🛠️ Skills
+* **Palestine Technical College – Deir El Balah**
+  B.Sc. Computer Systems Engineering — Second Year
+  GPA: **90.55%**
 
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
-![Windows Forms](https://img.shields.io/badge/Windows_Forms-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-
-**Core concepts:** OOP · Data Structures · Database Design (ERD, Normalization up to BCNF) · Three-Tier Architecture · Problem Solving/Algorithms (250+ solved problems)
+* **Shuhdaa Alnuseirat Secondary School**
+  High School Diploma — 2023
+  GPA: **97.60%**
+  Ranked **2nd in school**
 
 ---
 
-### 🚀 Currently Working On
+## 🛠️ Technical Skills
 
-**[PTC Hub](https://github.com/YeasenEimirat/PtcHub)** — a real web platform for Palestine Technical College students, deployed and running in production.
+**Languages**
 
-| Layer | Technology |
-|---|---|
-| Backend | .NET 8 Web API |
-| Database | SQL Server 2022 |
-| Data Access | ADO.NET (no ORM) |
-| Auth | JWT Bearer + BCrypt |
-| Email | Brevo REST API |
-| Frontend | Vanilla JS + HTML + CSS (Arabic RTL) |
-| Hosting | SmarterASP.NET (IIS) |
+C# · C++ · SQL
 
-🔗 Live: [ptchub1-001-site1.jtempurl.com](http://ptchub1-001-site1.jtempurl.com)
+**Backend & .NET**
 
----
+.NET 8 · ASP.NET Core Web API · ADO.NET · REST APIs · JWT
 
-### 📌 Featured Projects
+**Database**
 
-**[Driving License Management System](https://github.com/YeasenEimirat/-Driving-License-Management)** — C# / .NET / SQL Server
-A desktop system for managing driving license operations: applicant and admin profiles, tracking the application workflow (medical checks, theory tests, practical exams), and issuing/renewing licenses with data verification and storage in SQL Server.
+SQL Server · Database Design · ERD · Normalization · SQL Queries
 
-**[Banking System](https://github.com/YeasenEimirat/project-bank)** — C++
-A console-based banking system: account creation and authentication, deposits/withdrawals/transfers with balance tracking, and file-based storage for client and transaction data, built using OOP principles (classes, encapsulation).
+**Core Concepts**
+
+OOP · Data Structures · Algorithms · Problem Solving · Three-Tier Architecture
+
+**Tools**
+
+Git · GitHub · Visual Studio · SQL Server Management Studio
 
 ---
 
-### 📊 GitHub Stats
+## 🚀 Featured Projects
 
-![YeasenEimirat's GitHub stats](https://github-readme-stats.vercel.app/api?username=YeasenEimirat&show_icons=true&theme=radical)
+### ⭐ PTC Hub
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YeasenEimirat&layout=compact&theme=radical)
+**C# / .NET 8 / SQL Server / ADO.NET / JWT**
+
+PTC Hub is a web platform being developed for **Palestine Technical College students**.
+
+The project is currently in the **development and testing stage** and has not yet been released for student use.
+
+#### 🔐 Authorization & Permission System
+
+The system uses role- and year-based authorization:
+
+* **Student**
+
+  * Accesses courses related to their academic year
+  * Views general and year-specific announcements
+
+* **Supervisor**
+
+  * Responsible for a specific academic year
+  * Manages content within their assigned year
+
+* **Admin**
+
+  * Can be assigned to a specific academic year
+  * General admins can manage system-wide operations
+
+Authorization is enforced on the **server side**, not only through the frontend.
+
+#### 📚 Course Management
+
+* 47 courses across 4 academic years
+* Server-side course catalog
+* Course favorites
+* Academic-year based course access
+
+#### 📁 Course Files
+
+* Staff-uploaded files
+* Student file suggestions
+* Pending / approved / rejected workflow
+* Supervisor-controlled approval
+* Year-based visibility
+
+#### 📢 Announcements
+
+* General announcements
+* Year-specific announcements
+* Server-side authorization and filtering
+
+#### 📈 Progress Tracking
+
+Students can track their progress for each course:
+
+* `done`
+* `doing`
+* `none`
+* Study hours
+* Personal notes
+
+#### 🔑 Password Management
+
+* Password change using the current password
+* Admin password reset
+* Forgot-password workflow
+* Email OTP verification
+* OTP expiration
+* Attempt limits
+
+#### 👥 Student Management
+
+* Filter students by academic year
+* Move students between years
+* Year 5 represents graduated students
+
+#### 🛡️ Security Safeguards
+
+The system includes rules such as:
+
+* Preventing removal of the last general admin
+* Preventing users from changing their own privileges
+* Preventing year supervisors from promoting themselves to general admins
+* Server-side authorization for protected resources
+
+#### ⚙️ Tech Stack
+
+| Layer            | Technology              |
+| ---------------- | ----------------------- |
+| Backend          | .NET 8 Web API          |
+| Database         | SQL Server 2022         |
+| Data Access      | ADO.NET                 |
+| Authentication   | JWT Bearer              |
+| Password Hashing | BCrypt                  |
+| Email            | Brevo REST API          |
+| Hosting          | Planned / Testing Stage |
+
+> **Project Status:** 🚧 Under Development & Testing
+
+🔗 **Repository:** [github.com/YeasenEimirat/PtcHub](https://github.com/YeasenEimirat/PtcHub)
 
 ---
 
-### 📫 Contact
+### 🚗 Driving License Management System
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yasen-hani-50021b389)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yaseeneimirat23@gmail.com)
+**C# / .NET / SQL Server**
+
+A desktop system for managing driving license operations.
+
+Features include:
+
+* Applicant and user management
+* Application workflow
+* Medical checks
+* Theory tests
+* Practical exams
+* License issuance
+* License renewal
+* Data validation and SQL Server storage
+
+🔗 [View Project on GitHub](https://github.com/YeasenEimirat/-Driving-License-Management)
+
+---
+
+### 🏦 Banking System
+
+**C++ / OOP**
+
+A console-based banking system developed to practice object-oriented programming and system design.
+
+Features include:
+
+* Account creation
+* Authentication
+* Deposits
+* Withdrawals
+* Transfers
+* Balance tracking
+* File-based data storage
+
+🔗 [View Project on GitHub](https://github.com/YeasenEimirat/project-bank)
+
+---
+
+ 
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=YeasenEimirat&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=YeasenEimirat&theme=github_dark" />
+</p>
+
+## 📫 Contact
+
+* **GitHub:** [YeasenEimirat](https://github.com/YeasenEimirat)
+* **LinkedIn:** [Yaseen Eimirat](https://www.linkedin.com/)
+* **Email:** yaseeneimirat23@gmail.com
+
+---
+
+<p align="center">
+  Thanks for visiting my profile! 🚀
+</p>
